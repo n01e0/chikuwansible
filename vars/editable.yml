@@ -1,6 +1,6 @@
 # User Name
 # =============================================
-user: miyagaw61
+user: karkador
 
 # Basic Directory Path
 # =============================================
@@ -11,7 +11,7 @@ tmp: "{{home}}/tmp"
 docs: "{{home}}/docs"
 events: "{{home}}/events"
 program_files: "{{home}}/program_files"
-config_files: "{{home}}/docs/config_files"
+config_files: "{{home}}/dotfiles"
 bash_config_files: "{{config_files}}/bash"
 binaries: "{{home}}/bin"
 grave_root: "{{tmp}}/grave_root"
@@ -47,7 +47,7 @@ rust_src_path: "{{home}}/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/
 
 # LLVM
 # =============================================
-llvm_version: 5.0
+llvm_version: 7
 
 # NeoVim
 # =============================================

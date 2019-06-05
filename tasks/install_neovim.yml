@@ -1,19 +1,19 @@
-- name: Add Apt-Repository For NeoVim
-  apt_repository: repo=ppa:neovim-ppa/unstable
-
-- name: Apt Update
-  apt: update_cache=yes
-
-- name: Install Basic Packages For NeoVim By Apt
-  apt: 
-    name: software-properties-common 
-
+#- name: Add Apt-Repository For NeoVim
+#  apt_repository: repo=ppa:neovim-ppa/unstable
+#
+#- name: Apt Update
+#  apt: update_cache=yes
+#
+#- name: Install Basic Packages For NeoVim By Apt
+#  apt: 
+#    name: software-properties-common 
+#
 - name: Install NeoVim By Apt
   apt: 
     name: neovim
 
 - name: Update NeoVim By Pip
-  shell: bash -lc "pip install -U neovim"
+  shell: bash -lc "python3 -m pip install -U neovim"
 
 - name: Install Packages For NeoVim's Plugins By Apt
   apt:
@@ -24,7 +24,7 @@
     - name: "clang-{{llvm_version}}"
 
 - name: Install Packages For NeoVim's Plugins By Pip
-  shell: bash -lc "pip install neovim-remote"
+  shell: bash -lc "python3 -m pip install neovim-remote"
 
 - name: Make Directories For NeoVim
   file:

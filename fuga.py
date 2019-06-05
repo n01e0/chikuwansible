@@ -4,4 +4,4 @@ argvfugafuga = 3
 argvhogefuga = 4
 argvhogefoo = 5
 print(argv)
-This is hoge.py
+This is fuga.py
